@@ -9,7 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
-import { RouterModule, Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,12 +18,12 @@ import { RouterModule, Router } from '@angular/router';
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    ProjectsComponent,
-    RouterModule
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
