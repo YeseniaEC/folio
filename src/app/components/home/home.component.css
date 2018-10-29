@@ -1,0 +1,16 @@
+/* Container jumbotron */
+.jumbotron {
+  background-color: transparent;
+}
+.hero, .container-fluid {
+  padding: 0;
+  height: 55%;
+}
+
+.hero {
+  background-image: url('../../../assets/images/julien-moreau-83192-unsplash.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+

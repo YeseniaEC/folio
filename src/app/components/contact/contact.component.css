@@ -1,20 +1,75 @@
-.left-column {
-    /* background-color: red; */
-    height: 250px;
+/* .light-grey {
+    color: #9CACAC;
 }
+.light-steel {
+    color: #CBD9DF;
+}
+.dim-grey {
+    color: #5C595A;
+}
+.dark-grey {
+    color: #999693;
+}
+.grey {
+    color: #817E7A;
+} */
+
+.header {
+   margin-top: 30px;
+}
+
+.left-column, .right-column {
+    height: 450px;
+}
+
 .right-column {
-    background-color: grey;
-    height: 250px;
+    background-image: url('../../../assets/images/fresno.jpg');
+    background-size: cover;
+    background-position: bottom;
 }
 
-@media (min-width: 576px ) {
-    .left-column, .right-column {
-        font-size: 20px;
-    }
+.right-column > iframe {
+    margin: 35px 25px 0px 25px;
 }
 
-@media (max-width: 575.99px ){
-    .left-column, .right-column {
-        font-size: 20px;
-    }
+mat-form-field {
+    width: 100%;
+    margin-top: 15px;
+}
+
+button {
+    margin: 40px 0 40px 10px;
+}
+
+@media (min-width: 576px) {
+
+  .container {
+    margin-top: 30px;
+  }
+
+  .left-column {
+    font-size: 18px;
+  }
+
+  .left-column[_ngcontent-c3],
+  .right-column[_ngcontent-c3] {
+      height: 500px;
+  }
+}
+
+@media (max-width: 575.99px) {
+
+  .container {
+    margin-top: 30px;
+  }
+
+  .left-column,
+  .right-column {
+    font-size: 20px;
+  }
+
+  .left-column[_ngcontent-c3],
+  .right-column[_ngcontent-c3] {
+    height: 500px;
+  }
 }

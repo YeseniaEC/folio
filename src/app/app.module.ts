@@ -9,7 +9,19 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatRippleModule } from '@angular/material/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
+import { MatDialogModule } from '@angular/material/dialog';
+
+
+
 import { RouterModule } from '@angular/router';
+import { PopupComponent } from './components/popup/popup.component';
+import { MatInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,12 +30,21 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatRippleModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
