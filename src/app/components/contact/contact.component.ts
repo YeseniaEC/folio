@@ -1,37 +1,64 @@
 import { Component, OnInit } from '@angular/core';
-import { MatFormFieldControl } from '@angular/material/form-field';
-import { FormControl, Validators, FormGroup, FormBuilder } from '@angular/forms';
+import { Validators, FormGroup, FormBuilder } from '@angular/forms';
+
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
+
 })
 export class ContactComponent implements OnInit {
-  contactForm: FormGroup;
   submitted = false;
 
-  constructor( private formBuilder: FormBuilder ) { }
+  message: AngularFireList<any[]>;
+  contactForm: FormGroup;
 
-  ngOnInit() {
+  _database: any;
+
+  constructor(private formBuilder: FormBuilder, _database: AngularFireDatabase ) {
+    this.createForm();
+  }
+
+  createForm() {
     this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required, Validators.minLength(3)],
-      email: ['', Validators.required, Validators.email],
-      text: ['', Validators.required, Validators.minLength(3)],
+      name: [
+        '',
+        [
+        Validators.required,
+        Validators.minLength(3),
+        Validators.pattern('^[a-zA-Z ]*$'),
+        Validators.nullValidator
+        ],
+      ],
+      email: [
+        '',
+        [
+        Validators.required,
+        Validators.email,
+        Validators.minLength(3),
+        Validators.nullValidator
+        ]
+      ],
+      message: [
+        '',
+        [
+        Validators.required,
+        Validators.minLength(3),
+        Validators.nullValidator,
+        ]
+      ],
     });
-   }
+  }
 
-  // onSubmit() {
-    // this.submitted = true;
+  ngOnInit() { }
 
-  //   if (this.name.invalid) {
-  //     return;
-  //   }
-  //   alert('Success, thank you for your submission.');
-  //   console.log('Email Sent');
-  // }
   onSubmit() {
+    console.log('You clicked me');
+
     this.submitted = true;
+    console.log(this.contactForm.value);
 
     if (this.contactForm.invalid) {
       console.log('error');
