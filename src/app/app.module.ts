@@ -50,7 +50,6 @@ import { environment } from '../environments/environment';
     ReactiveFormsModule,
     FormsModule,
     MatCardModule,
-    AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
   ],
   providers: [ AngularFireDatabase ],
