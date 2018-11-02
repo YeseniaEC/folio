@@ -1,11 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway|Rokkitt');
+
+.lobster {
+  font-family: 'Lobster', cursive;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.rokkitt {
+  font-family: 'Rokkitt', cursive;
+}
+
 .header {
-    margin: 20px;
+  margin: 20px;
 }
 
 .example-card {
-    margin: 25px 0 25px 0;
+  margin: 25px 0 25px 0;
 }
 
 .container-fluid {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.mat-card-actions>a {
+  color: #000;
+  list-style: none;
+  text-decoration: none;
 }
