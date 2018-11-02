@@ -21,8 +21,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material';
 
-import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
-import { AngularFireModule } from 'angularfire2';
 
 import { environment } from '../environments/environment';
 
@@ -50,9 +48,8 @@ import { environment } from '../environments/environment';
     ReactiveFormsModule,
     FormsModule,
     MatCardModule,
-    AngularFireDatabaseModule,
   ],
-  providers: [ AngularFireDatabase ],
+  providers: [ ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -70,7 +70,8 @@ blockquote {
     display: none;
   }
   .hero {
-    height: 25%;
+    height: 30%;
+    background-position: right;
   }
   .header-text {
     height: 100px;

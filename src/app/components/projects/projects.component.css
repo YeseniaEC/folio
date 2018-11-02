@@ -24,7 +24,12 @@
   margin-bottom: 50px;
 }
 
-.mat-card-actions>a {
+mat-card {
+  min-height: 400px;
+}
+
+
+mat-card-actions>a {
   color: #000;
   list-style: none;
   text-decoration: none;

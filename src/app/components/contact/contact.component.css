@@ -2,6 +2,9 @@
 .lobster {
   font-family: 'Lobster', cursive;
 }
+.container-fluid {
+  min-height: 100vh;
+}
 .header {
    margin-top: 30px;
 }

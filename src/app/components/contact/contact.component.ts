@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 
-import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -12,12 +10,9 @@ import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 export class ContactComponent implements OnInit {
   submitted = false;
 
-  message: AngularFireList<any[]>;
   contactForm: FormGroup;
 
-  _database: any;
-
-  constructor(private formBuilder: FormBuilder, _database: AngularFireDatabase ) {
+  constructor(private formBuilder: FormBuilder ) {
     this.createForm();
   }
 
