@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway|Rokkitt');
+.lobster {
+  font-family: 'Lobster', cursive;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.rokkitt {
+  font-family: 'Rokkitt', cursive;
+}
 .header {
    margin-top: 30px;
 }
