@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-7 col-sm-12 left-column">
         <!-- @TODO - backend  -->
-        <form name="form" [formGroup]="contactForm" (onSubmit)="onSubmit()" novalidate>
+        <form name="form" [formGroup]="contactForm" (onSubmit)="onSubmit()" novalidate #f="ngForm">
           <!-- Name -->
           <mat-form-field class="form-group">
             <input class="form-control" id="name" formControlName="name" matInput type="text" placeholder="Enter your name."
