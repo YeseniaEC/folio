@@ -4,24 +4,24 @@
     <div class="row">
       <div class="col-md-7 col-sm-12 left-column">
         <!-- @TODO - backend  -->
-        <form name="form" [formGroup]="contactForm" (onSubmit)="onSubmit()" novalidate #f="ngForm">
+        <form name="form" [formGroup]="contactForm" (onSubmit)="onSubmit()">
           <!-- Name -->
           <mat-form-field class="form-group">
             <input class="form-control" id="name" formControlName="name" matInput type="text" placeholder="Enter your name."
-              required minlength="3" ngModel>
+              required minlength="3">
             <mat-hint>Name</mat-hint>
             <mat-error>Valid name required.</mat-error>
           </mat-form-field>
           <!-- Email -->
           <mat-form-field class="form-group">
             <input class="form-control" id="email" formControlName="email" matInput type="text" placeholder="Enter your email."
-              required minlength="3" ngModel name="email">
+              required minlength="3" name="email">
             <mat-hint>Email</mat-hint>
             <mat-error>A valid email is required.</mat-error>
           </mat-form-field>
           <!-- Message -->
           <mat-form-field class="text-area" class="form-group">
-            <textarea matInput id="message" class="form-control" formControlName="message" type="text" placeholder="Enter message here." required ngModel minlength="3"></textarea>
+            <textarea matInput id="message" class="form-control" formControlName="message" type="text" placeholder="Enter message here." required minlength="3"></textarea>
             <mat-hint>Message here</mat-hint>
             <mat-error>Please enter message.</mat-error>
           </mat-form-field>
