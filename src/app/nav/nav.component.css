@@ -1,0 +1,11 @@
+.inner_menu {
+  color: #000 !important;
+}
+
+.main_color {
+  background-color: rgb(177, 177, 177, 0.1);
+}
+
+a.nav-link, a.navbar-brand {
+  color: #000 !important;
+}
