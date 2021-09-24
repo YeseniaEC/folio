@@ -1,86 +1,78 @@
-<div class="container-fluid">
-  <h2 class="text-center header lobster">My Projects</h2>
-  <div class="row">
-    <!-- Card 1 -->
-    <div class="col-md-4 col-sm-6 ">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title class="Raleway">Api Challenge</mat-card-title>
-          <mat-card-subtitle>Typescript</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="../../../assets/images/api.png" alt="Photo of Api Challenge project">
-        <mat-card-content>
-          <p>
-            This website displays results from an open source api, USAJobs. Use of observables and simple routing.
-
-
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="https://api-challenge-55ea4.firebaseapp.com/" target="_blank"><button mat-button>View</button></a>
-          <a href="https://github.com/YeseniaEC/api-challenge" target=" _blank"><button mat-button>Source</button></a>
-        </mat-card-actions>
-      </mat-card>
+<div class="container">
+  <div>
+    <div class="grid_item_title">
+      <h2 class="d-flex justify-content-center align-items-center">Projects</h2>
     </div>
-
-    <!-- Card 2 -->
-    <div class="col-md-4 col-sm-6">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Angular Challenge</mat-card-title>
-          <mat-card-subtitle>Typescript</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="../../../assets/images/challenge.png" alt="Photo of challenge project">
-        <mat-card-content>
-          <p>
+  </div>
+  <div class="grid_container">
+    <div class="grid_item spotlight_card">
+      <article class=" project_card">
+        <img class="card_image" src="../../../assets/images/engne_project.jpg" alt="Photo of intro to angular">
+        <div class="card_detail">
+          <h5 class="card_title">Engne</h5>
+          <p class="card_sub">MEAN stack</p>
+          <p class="card_description">
+             Custom tool to manage company morale, and offer incentives to employees. Built using the MEAN tech stack.
+          </p>
+        </div>
+        <div class="card_footer">
+          <a class="card_link" target="_blank" href="https://engne.co">
+            <button mat-button>View</button></a>
+        </div>
+      </article>
+    </div>
+    <div class="grid_item">
+      <article class="project_card">
+        <img class="card_image" src="../../../assets/images/api.png" alt="screenshot of Api Challenge project">
+        <div class="card_detail">
+          <h5 class="card_title">Api Challenge</h5>
+          <p class="card_sub">TypeScript</p>
+          <p class="card_description">
+            This website displays results from an open source api, USAJobs. Use of observables and simple routing.
+          </p>
+        </div>
+        <div class="card_footer">
+          <a class="card_link" href="https://github.com/YeseniaEC/api-challenge" target=" _blank">
+            <i class="fa-2x fab fa-github"></i>
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="grid_item">
+      <article class="project_card">
+        <img class="card_image" src="../../../assets/images/challenge.png" alt="screenshot of angular challenge project">
+        <div class="card_detail">
+          <h5 class="card_title">Angular Challenge</h5>
+          <p class="card_sub">TypeScript</p>
+          <p class="card_description">
             This website focuses on the implementation of routing, custom classes, custom interfaces, and *ngFor.
           </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="https://angular-challenge1.firebaseapp.com/"><button mat-button>View</button></a>
-          <a href="https://github.com/YeseniaEC/AngularChallenge"><button mat-button>Source</button></a>
-        </mat-card-actions>
-      </mat-card>
+        </div>
+        <div class="card_footer">
+          <a class="card_link" target="_blank" href="https://angular-challenge1.firebaseapp.com/"><button mat-button>View</button></a>
+          <a class="card_link" href="https://github.com/YeseniaEC/AngularChallenge" target=" _blank">
+            <i class="fa-2x fab fa-github"></i>
+          </a>
+        </div>
+      </article>
     </div>
-    <!-- Card 3 -->
-    <div class="col-md-4 col-sm-6">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Intro to Angular</mat-card-title>
-          <mat-card-subtitle>Typescript</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="../../../assets/images/intro-ng.png" alt="Photo of intro to angular">
-        <mat-card-content>
-          <p>
+    <div class="grid_item">
+      <article class="project_card">
+        <img class="card_image" src="../../../assets/images/intro-ng.png" alt="Photo of intro to angular">
+        <div class="card_detail">
+          <h5 class="card_title">Intro to Angular</h5>
+          <p class="card_sub">TypeScript</p>
+          <p class="card_description">
             This website was an exploration of Angular. Created mini apps on different pages.
           </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="https://angular-intro-8abe1.firebaseapp.com/"><button mat-button>View</button></a>
-          <a href="https://github.com/YeseniaEC/angular-intro"><button mat-button>Source</button></a>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <!-- New Projects -->
-    <div class="col-md-4 col-sm-6">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>More projects...</mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="../../../assets/images/robot-more.jpg" alt="Photo of Wall-e Robot">
-        <mat-card-content>
-          <p>
-            More projects in the oven. Go visit my github to view my progress <i class="fas fa-spinner"></i>
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a href="https://github.com/YeseniaEC"><button mat-button>Github</button></a>
-        </mat-card-actions>
-      </mat-card>
+        </div>
+        <div class="card_footer">
+          <a class="card_link" target="_blank" href="https://angular-intro-8abe1.firebaseapp.com/"><button mat-button>View</button></a>
+          <a class="card_link" href="https://github.com/YeseniaEC/angular-intro" target=" _blank">
+            <i class="fa-2x fab fa-github"></i>
+          </a>
+        </div>
+      </article>
     </div>
   </div>
 </div>

@@ -23,6 +23,8 @@ import { MatInputModule } from '@angular/material';
 
 
 import { environment } from '../environments/environment';
+import { AboutComponent } from './components/about/about.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { environment } from '../environments/environment';
     HomeComponent,
     ContactComponent,
     ProjectsComponent,
-    PopupComponent
+    PopupComponent,
+    AboutComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

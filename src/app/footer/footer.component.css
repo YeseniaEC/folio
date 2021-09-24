@@ -1,7 +1,28 @@
 i {
-    color: #fff;
+    color: #000;
 }
 
 i:hover {
     color: purple;
+}
+
+.inner_menu {
+  color: #000 !important;
+}
+
+.main_color {
+  background-color: rgb(177, 177, 177, 0.1);
+}
+
+a, a.nav-link, a.navbar-brand {
+  color: #000 !important;
+}
+
+.underline_ {
+  text-decoration: underline;
+}
+
+.footer_inner {
+  align-items: center;
+  justify-content: center;
 }
