@@ -10,26 +10,20 @@ blockquote {
 .container {
   height: max-content;
   min-height: 80vh;
-  /* padding-top: 50px; */
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 20vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   align-content: center;
 }
 .grid_item {
-  /* text-align: center; */
-  /* border-radius: 20px; */
-  /* background: #E9DDDD; */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .avatar_div {
-  /* padding-left: 35px; */
   display: flex;
-  /* width: fit-content; */
+  height: fit-content;
   justify-content: center;
   flex-direction: row;
 }
@@ -39,20 +33,18 @@ blockquote {
   overflow: hidden;
   line-height: 1;
   vertical-align: middle;
-  background-color: #777;
+  /* background-color: #777; */
   border-radius: 6px;
   flex-shrink: 0;
-  box-shadow: 0 1 0 2px #eee;
+  box-shadow: 0 0 0 1px #eee;
   justify-content: center;
+  max-height: 300px;
 }
 .border {
-  border: 1px solid var(--color-border-primary) !important;
+  border: 1px solid #ccc !important;
 }
 .avatar-user {
   border-radius: 50% !important;
-}
-.position-relative {
-  position: relative !important;
 }
 .about_text {
   box-sizing: border-box;
@@ -61,12 +53,28 @@ blockquote {
   flex-direction: row;
   align-items: center;
   height: 100%;
-  /* width: 100%; */
-  /* padding-left: 10px; */
-  text-overflow: clip;
+  width: 100%;
   line-height: 30px;
   text-align: left;
 }
 .about_div {
-  /* background-color: orange; */
+  height: fit-content;
+  overflow-y: hidden;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .avatar {
+    max-height: 250px;
+  }
+  .about_div, .about_text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .container {
+    margin-top: 10px;
+  }
+  blockquote {
+    font-size: 16px;
+  }
 }

@@ -6,6 +6,6 @@
   background-color: rgb(177, 177, 177, 0.1);
 }
 
-a.nav-link, a.navbar-brand {
+a.nav-link, a.navbar-brand, .navbar-toggler {
   color: #000 !important;
 }

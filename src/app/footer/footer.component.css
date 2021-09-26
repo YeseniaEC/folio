@@ -3,7 +3,7 @@ i {
 }
 
 i:hover {
-    color: purple;
+    color: #E9DDDD;
 }
 
 .inner_menu {
@@ -25,4 +25,5 @@ a, a.nav-link, a.navbar-brand {
 .footer_inner {
   align-items: center;
   justify-content: center;
+  text-align: center;
 }

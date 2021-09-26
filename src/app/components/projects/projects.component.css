@@ -49,7 +49,7 @@ mat-card-actions>a {
   justify-content: center;
   align-items: start;
   gap: 2.5em;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .grid_item {
@@ -117,4 +117,14 @@ mat-card-actions>a {
 }
 .project_card {
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 20px !important;
+  }
+
+  .grid_item_title {
+    height: 70px;
+  }
 }
