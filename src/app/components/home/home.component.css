@@ -14,25 +14,8 @@
   font-family: 'Rokkitt', cursive;
 }
 
-/* Container jumbotron */
-
-.hero, .container-fluid {
-  padding: 0;
-  height: 90%;
-}
-
 .display-5 {
   padding-top: 15%;
-}
-.hero-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.jumbotron {
-  background-color: transparent;
-  height: 90%;
 }
 
 .image-overlay {
@@ -52,52 +35,80 @@
   background-repeat: no-repeat;
 }
 
-.hero > h1, p {
-  z-index: 5;
-  color: black;
-  font-weight: 700;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
 /* Quote  */
 
 blockquote {
   font-style: italic;
 }
-/* Using Grid */
-.container_grid {
-  display: grid;
-  grid-template-columns: 100%;
-  width: 100%;
-  height: 100%;
+.my_button {
+  background-color: #000;
+  color: #E9DDDD;
+}
+.my_button:active {
+  background-color: #E9DDDD;
+  color: #000;
 }
 
-/* Media Queries */
+.grid_container {
+  padding-top: 5%;
+  width: 100%;
+  list-style: none;
+  margin-left: 0;
+  padding: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  gap: 2.5em;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+}
+
+.container-fluid {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-content: center;
+}
+.grid_item {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  display: inline-flex;
+  align-content: center;
+  flex-direction: column;
+}
 
 @media (max-width: 768px) {
-  .image-overlay {
-    display: none;
+  .grid_container {
+    text-align: center;
+    height: 75vh;
   }
-  .hero {
-    height: 30%;
-    background-position: right;
+  .grid_background {
+    background-color: #000;
+    color: rgb(233,221,221);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
-  .header-text {
-    height: 100px;
-    background-color: rgb(196, 187, 187);
-    padding: 10px 0 0 0;
+  blockquote {
+    font-size: 19px;
   }
-  .about-me-sm {
-    padding: 10% 15% 20% 15%;
-    height: auto;
-    min-height: 650px;
+  .display-5 {
+    padding-top: 0;
   }
+
 }
-@media (min-width: 768px){
-  .header-text > h3,
-  .header-text > p,
-  .header-text > blockquote,
-  .header-text > button {
-    display: none;
+
+@media (min-width: 769px) {
+  .grid_background {
+    background: linear-gradient(to bottom, rgba(233, 221, 221, 0.55), rgba(255, 255, 255, 1.5)),
+  url('../../../assets/images/robots.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   }
 }
