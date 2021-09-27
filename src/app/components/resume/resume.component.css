@@ -93,7 +93,8 @@
   }
   .info_section {
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
   }
 }
 
@@ -114,6 +115,11 @@
   .resume_subtitles, p {
     padding-top: 5px !important;
     margin-bottom: 5px;
+  }
+    .info_section {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
   }
 }
 
